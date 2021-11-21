@@ -10,34 +10,42 @@
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container">
+            <div class="container">
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                  </button>
             <div class="nav">
-                <div class="logo">
+                <div class="logo__text">
+                    <div class="logo">
                     <img src="img/logo.svg" alt="LaslesVPN">
                 </div>
                 <a href="#" class="logo--text">Lasles<span class="vpn--logo">VPN</span></a>
+                </div>
                 <ul class="menu">
                     <li>
-                        <a href="#">About</a>
+                        <a class="menuItem" href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Features</a>
+                        <a class="menuItem" href="#">Features</a>
                     </li>
                     <li>
-                        <a href="#">Pricing</a>
+                        <a class="menuItem" href="#">Pricing</a>
                     </li>
                     <li>
-                        <a href="#">Testimonials</a>
+                        <a class="menuItem" href="#">Testimonials</a>
                     </li>
                     <li>
-                        <a href="#">Help</a>
+                        <a class="menuItem" href="#">Help</a>
                     </li>
                 </ul>
                 <div class="sign">
-                    <a href="#">Sign In</a>
-                    <a href="#">Sign Up</a>
+                    <a class="menuItem" href="#">Sign In</a>
+                    <a class="menuItem" href="#">Sign Up</a>
                 </div>
-            </div>
+                </div>
+           
         </div>
     </header>
         <main>
@@ -65,7 +73,7 @@
                             <p class="description">Users</p>
                         </div>
                 </div>
-                <hr>
+                <hr class="hr">
                 <div class="locations">
                     <img class="img--stats" src="img/location.png" alt="locations">
                     <div class="description--block">
@@ -73,7 +81,7 @@
                         <p class="description">Locations</p>
                     </div>
                 </div>
-                <hr>
+                <hr class="hr">
                 <div class="servers">
                     <img class="img--stats" src="img/server.png" alt="servers">
                     <div class="description--block">
@@ -215,7 +223,7 @@
             <h2>Huge Global Network <br> of Fast VPN</h2>
             <p>See <span>LaslesVPN</span> everywhere to make it easier for you when you move <br> locations.</p>
             </div>
-            <div class="network_img">
+        <div class="network_img">
             <figure>
                 <img src="img/map.png" alt="map">
             </figure>
@@ -282,7 +290,6 @@
             </div>
             </div>
       </footer>
+      <script src="main.js"></script>
 </body>
 </html>
-
-<span></span>

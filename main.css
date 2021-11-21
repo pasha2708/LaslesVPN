@@ -22,8 +22,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .container{
-	max-width: 1140px;
+	width: 100%;
+	max-width: 1160px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 header a{
@@ -68,6 +70,11 @@ header a{
 	color: #0B132A;
 	font-size: 20px;
 	font-weight: 500;
+}
+
+.logo__text{
+	display: flex;
+	align-items: center;
 }
 
 .sign{
@@ -144,6 +151,8 @@ h1 {
 
 .img--started{
 	margin-right: -60px;
+	height: 100%;
+	width: auto;
 }
 
 hr{
@@ -222,6 +231,8 @@ hr{
 
 .provide .container>img{
 	margin-right: 100px;
+	width: 100%;
+	height: 100%;
 }
 
 .check img{
@@ -378,6 +389,11 @@ hr{
 	font-weight: 500;
 }
 
+figure img{
+	width: 100%;
+    height: auto;
+}
+
 .footer{
 	background-color: rgb(230, 230, 230);
 	margin-top: 50px;
@@ -442,5 +458,158 @@ hr{
 	color: #4F5665;
 	list-style-type: none;
 	line-height: 30px;
+}
 
+.hamburger {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	top: 1rem;
+	right: 1rem;
+	padding: 4px;
+	border: black solid 1px;
+	background: white;
+	cursor: pointer;
+  }
+
+
+@media (max-width: 1064px) {
+	.vpn--logo{
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 925px) {
+	.menu{
+		display: none;
+	}
+	.img--started {
+		margin-right: 0px;
+		height: 100%;
+		width: auto;
+ 	}
+	 .sign a:first-child{
+		 display: none;
+	 }
+	 .sign a:last-child{
+		 display: none;
+	 }
+	 /* Hamburger list */
+	 .menuItem {
+		display: block;
+		margin: 2rem 4rem;
+		font-size: 1.8rem;
+		color: white;
+		text-decoration: none;
+	  }
+	  
+	  .menuItem:hover {
+		text-decoration: underline;
+	  }
+	  
+	  .hamburger {
+		display: block;
+		position: fixed;
+		z-index: 100;
+		top: 1.rem;
+		right: 1rem;
+		padding: 4px;
+		border: black solid 1px;
+		background: rgb(255, 255, 255);
+		cursor: pointer;
+	  }
+	  
+	  .closeIcon {
+		display: none;
+	  }
+	  
+	  .menu, .sign {
+		display: block;
+		position: fixed;
+		transform: translateY(-100%);
+		transition: transform 0.2s;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		background: rgba(0, 0, 0, 0.677);
+		color: white;
+		list-style: none;
+		padding-top: 4rem;
+	  }
+	  
+	  .showMenu {
+		transform: translateY(0);
+	  }
+
+	  .logo__text {
+		display: flex;
+		align-items: center;
+		position: fixed;
+		z-index: 100;
+		top: 1rem;
+		left: 1rem;
+		padding: 4px;
+	  }
+
+	.header{
+		
+		height: 5rem;
+		background-color: #fff;
+	}
+	.general{
+		flex-wrap: wrap;
+	}	
+	.general--text{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.general--text h1{
+		text-align: center;
+	}  
+	.provide .container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.provide_text h2 {
+		text-align: center;	
+	}
+	.img--started{
+		width: 100%;
+		height: 100%;
+	}
+	.plans{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 812px) {
+	.stats{
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	.stats>div {
+		margin-bottom: 20px;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+
+	.hr{
+		display: none;
+	}
+
+	.footer_block{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
 }
