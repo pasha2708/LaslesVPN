@@ -601,12 +601,9 @@ figure img{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-
-
 	.hr{
 		display: none;
 	}
-
 	.footer_block{
 		display: flex;
 		flex-wrap: wrap;
